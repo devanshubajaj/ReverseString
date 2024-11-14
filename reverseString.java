@@ -7,8 +7,10 @@ class StringReverser {
         System.out.print("Enter a string to reverse: ");
         String original = scanner.nextLine();
 
-        String reversed = reverseString(original);
-        System.out.println("Reversed String: " + reversed);
+        // Convert to lowercase to ignore case sensitivity
+        String reversed = reverseString(original.toLowerCase());
+
+        System.out.println("Reversed String (case insensitive): " + reversed);
 
         scanner.close();
     }
