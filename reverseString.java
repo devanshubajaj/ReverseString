@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class StringReverser {
     public static void main(String[] args) {
+        // Geta user input
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a string to reverse: ");
