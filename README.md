@@ -1,4 +1,5 @@
 ReverseString Project
+
 This project is a simple Java program designed to reverse a string, check if it is a palindrome, and count the number of vowels in the reversed string. The program is divided into three main features, each developed in its own branch and merged into the master branch.
 
 Features
