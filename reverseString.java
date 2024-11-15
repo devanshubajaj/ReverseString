@@ -7,9 +7,15 @@ class StringReverser {
             System.out.print("Enter a string to reverse: ");
             String original = scanner.nextLine();
 
-            String reversed = reverseString(original);
+            // Choose case sensitivity option
+            System.out.print("Do you want the reversal to be case insensitive? (yes/no): ");
+            String choice = scanner.nextLine().trim().toLowerCase();
+            
+            String processedString = choice.equals("yes") ? original.toLowerCase() : original;
+            String reversed = reverseString(processedString);
+            
             System.out.println("Reversed String: " + reversed);
-
+            
             // Count the number of vowels in the reversed string
             int vowelCount = countVowels(reversed);
             System.out.println("Number of vowels in the reversed string: " + vowelCount);
