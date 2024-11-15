@@ -12,7 +12,7 @@ class StringReverser {
             String choice = scanner.nextLine().trim().toLowerCase();
             
             // Process string based on case-sensitivity choice for reversal
-            String processedString = choice.equals("yes") ? original.toLowerCase() : original;
+            String processedString = choice.equals("yes") ? original.toLowerCase() : original;// THis is a new comment
             String reversed = reverseString(processedString);
             
             System.out.println("Reversed String: " + reversed);
