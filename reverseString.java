@@ -2,19 +2,17 @@ import java.util.Scanner;
 
 class StringReverser {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a string to reverse: ");
-        String original = scanner.nextLine();
-
-        String reversed = reverseString(original);
-        System.out.println("Reversed String: " + reversed);
-
-        // Count the number of vowels in the reversed string
-        int vowelCount = countVowels(reversed);
-        System.out.println("Number of vowels in the reversed string: " + vowelCount);
-
-        scanner.close();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter a string to reverse: ");
+            String original = scanner.nextLine();
+            
+            String reversed = reverseString(original);
+            System.out.println("Reversed String: " + reversed);
+            
+            // Count the number of vowels in the reversed string
+            int vowelCount = countVowels(reversed);
+            System.out.println("Number of vowels in the reversed string: " + vowelCount);
+        }
     }
 
     public static String reverseString(String str) {
