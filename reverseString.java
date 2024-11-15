@@ -11,10 +11,18 @@ class StringReverser {
             System.out.print("Do you want the reversal to be case insensitive? (yes/no): ");
             String choice = scanner.nextLine().trim().toLowerCase();
             
+            // Process string based on case-sensitivity choice for reversal
             String processedString = choice.equals("yes") ? original.toLowerCase() : original;
             String reversed = reverseString(processedString);
             
             System.out.println("Reversed String: " + reversed);
+            
+            // Check if the original string is a palindrome, ignoring case
+            if (original.equalsIgnoreCase(reversed)) {
+                System.out.println("The original string is a palindrome.");
+            } else {
+                System.out.println("The original string is not a palindrome.");
+            }
             
             // Count the number of vowels in the reversed string
             int vowelCount = countVowels(reversed);
