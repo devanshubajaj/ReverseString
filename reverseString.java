@@ -14,7 +14,7 @@ class StringReverser {
             // Process string based on case-sensitivity choice for reversal
             String processedString = choice.equals("yes") ? original.toLowerCase() : original;
             String reversed = reverseString(processedString);
-            
+            // This is a comment
             System.out.println("Reversed String: " + reversed);
             
             // Check if the original string is a palindrome, ignoring case
